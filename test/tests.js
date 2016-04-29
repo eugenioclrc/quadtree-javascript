@@ -16,7 +16,7 @@ var args = {
 
 test("retrieve top left region", function() {
 
-    var tree = QUAD.init(args);
+    var tree = quad(args);
     tree.insert(itemArray);
     tree.retrieve({x : 2,y : 2, h: 2, w: 2},
         function(item) {
@@ -25,7 +25,7 @@ test("retrieve top left region", function() {
 });
 
 test("retrieve top right region", function() {
-    var tree = QUAD.init(args);
+    var tree = quad(args);
     tree.insert(itemArray);
     tree.retrieve({x : 400,y : 2, h: 2, w: 2},
         function(item) {
@@ -35,7 +35,7 @@ test("retrieve top right region", function() {
 
 test("retrieve bottom right region", function() {
 
-    var tree = QUAD.init(args);
+    var tree = quad(args);
     tree.insert(itemArray);
     tree.retrieve({x : 400,y : 400, h: 2, w: 2},
         function(item) {
@@ -44,7 +44,7 @@ test("retrieve bottom right region", function() {
 });
 
 test("retrieve top right region", function() {
-    var tree = QUAD.init(args);
+    var tree = quad(args);
     tree.insert(itemArray);
     tree.retrieve({x : 400,y : 2, h: 2, w: 2},
         function(item) {
